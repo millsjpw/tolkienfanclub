@@ -70,7 +70,7 @@ def generate_page_recursive(basepath, from_path, template_path, dest_path):
 
 def main():
     basepath = sys.argv[1] if len(sys.argv) > 1 else '/'
-    copy_directory('static', 'public')
+    copy_directory('static', 'docs')
     generate_page_recursive(basepath, 'content', 'template.html', 'docs')
     
 if __name__ == "__main__":
